@@ -246,7 +246,8 @@ var HelloWorldL=cc.Layer.extend({
 //		spriteEndNode.runAction(action);
 //		this.unschedule(this.scoreCounter);
 //		endScoreText.setString(gameScore);
-		
+
+		//有了新的历史记录。则刷新这个历史记录
 		if(gameScore>gameBestScore){
 			gameBestScore=gameScore;
 			cc.sys.localStorage.setItem("bestScore" ,gameBestScore);

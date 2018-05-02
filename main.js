@@ -76,7 +76,10 @@ cc.game.onStart = function(){
 	}
     WINSIZE=cc.winSize;
     cc.view.resizeWithBrowserSize(true);
+
+
     //load resources
+    //MyLoaderScene是进度条加载资源相关 g_resources是存放的全部资源，游戏开始前，先全部加载到内存中去
     MyLoaderScene.preload(g_resources, function () {
     	cc.director.runScene(new HelloWorldS());
     	//cc.director.runScene(new HelloWorldScene());
