@@ -1,0 +1,645 @@
+{
+  "ID": "a2ee0952-26b5-49ae-8bf9-4f1d6279b798",
+  "Version": "2.3.2.3",
+  "Name": "MainScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [
+        {
+          "StartIndex": 2,
+          "EndIndex": 2,
+          "Name": "animation0",
+          "ctype": "AnimationInfoData"
+        }
+      ],
+      "ObjectData": {
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "bg.png",
+              "Plist": ""
+            },
+            "Scale9Width": 640,
+            "Scale9Height": 960,
+            "StretchWidthEnable": true,
+            "StretchHeightEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "Tag": 8,
+            "ActionTag": -1003477142,
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "Name": "BackImg_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/Sprite.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "RightMargin": 594.0,
+            "TopMargin": 914.0,
+            "Tag": 240,
+            "ActionTag": 1631494619,
+            "Size": {
+              "X": 46.0,
+              "Y": 46.0
+            },
+            "Name": "Sprite_Container",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "fcwm520logobg.png",
+              "Plist": ""
+            },
+            "Scale9Width": 640,
+            "Scale9Height": 92,
+            "StretchWidthEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 0.0958
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "BottomEdge",
+            "TopMargin": 868.0,
+            "Tag": 8,
+            "ActionTag": -1522588244,
+            "Size": {
+              "X": 640.0,
+              "Y": 92.0
+            },
+            "Name": "DownImg_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "btn1.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "btn.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 42,
+            "Scale9Height": 58,
+            "OutlineSize": 0,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 0.0,
+            "ShadowOffsetY": 0.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 584.9702,
+              "Y": 45.6563
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.914,
+              "Y": 0.0476
+            },
+            "PreSize": {
+              "X": 0.1125,
+              "Y": 0.0833
+            },
+            "HorizontalEdge": "RightEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 548.9702,
+            "RightMargin": 19.0298,
+            "TopMargin": 874.3437,
+            "BottomMargin": 5.6563,
+            "CallBackType": "Click",
+            "Tag": 8,
+            "ActionTag": 1237246454,
+            "Size": {
+              "X": 72.0,
+              "Y": 80.0
+            },
+            "Name": "DownBtn_1",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "topline.png",
+              "Plist": ""
+            },
+            "Scale9Width": 640,
+            "Scale9Height": 8,
+            "StretchWidthEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 322.1307,
+              "Y": 869.3621
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5033,
+              "Y": 0.9056
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 0.0083
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "TopEdge",
+            "LeftMargin": 2.1307,
+            "RightMargin": -2.1307,
+            "TopMargin": 86.6379,
+            "BottomMargin": 865.3621,
+            "Tag": 9,
+            "ActionTag": -760743113,
+            "Size": {
+              "X": 640.0,
+              "Y": 8.0
+            },
+            "Name": "TopImg_3",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 40,
+            "LabelText": "00000",
+            "OutlineSize": 0,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 0.0,
+            "ShadowOffsetY": 0.0,
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 122.301,
+              "Y": 917.538
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1911,
+              "Y": 0.9558
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "TopEdge",
+            "LeftMargin": 122.301,
+            "RightMargin": 417.699,
+            "TopMargin": 22.462,
+            "BottomMargin": 897.538,
+            "Tag": 14,
+            "ActionTag": -1034408647,
+            "Size": {
+              "X": 100.0,
+              "Y": 40.0
+            },
+            "Name": "Text_1",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 40,
+            "LabelText": "120",
+            "OutlineSize": 0,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 0.0,
+            "ShadowOffsetY": 0.0,
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 492.075,
+              "Y": 917.538
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7689,
+              "Y": 0.9558
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "HorizontalEdge": "RightEdge",
+            "VerticalEdge": "TopEdge",
+            "LeftMargin": 492.075,
+            "RightMargin": 87.925,
+            "TopMargin": 22.462,
+            "BottomMargin": 897.538,
+            "Tag": 16,
+            "ActionTag": -408589761,
+            "Size": {
+              "X": 60.0,
+              "Y": 40.0
+            },
+            "Name": "Text_1_0",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Layer.json",
+              "Plist": ""
+            },
+            "InnerActionSpeed": 0.5,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 7.6379,
+              "Y": 85.9642
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.0119,
+              "Y": 0.0895
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": 7.6379,
+            "RightMargin": -7.6379,
+            "TopMargin": -85.9642,
+            "BottomMargin": 85.9642,
+            "Tag": 10,
+            "ActionTag": 447681449,
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "Name": "ProjectNode_1",
+            "ctype": "ProjectNodeObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "clock.png",
+              "Plist": ""
+            },
+            "Scale9Width": 49,
+            "Scale9Height": 54,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 448.2286,
+              "Y": 920.7611
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7004,
+              "Y": 0.9591
+            },
+            "PreSize": {
+              "X": 0.0766,
+              "Y": 0.0562
+            },
+            "LeftMargin": 423.7286,
+            "RightMargin": 167.2714,
+            "TopMargin": 12.2389,
+            "BottomMargin": 893.7611,
+            "Tag": 15,
+            "ActionTag": 780855777,
+            "Size": {
+              "X": 49.0,
+              "Y": 54.0
+            },
+            "Name": "TopImg_2",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "score.png",
+              "Plist": ""
+            },
+            "Scale9Width": 73,
+            "Scale9Height": 40,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 57.2834,
+              "Y": 919.3379
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0895,
+              "Y": 0.9576
+            },
+            "PreSize": {
+              "X": 0.1141,
+              "Y": 0.0417
+            },
+            "LeftMargin": 20.7834,
+            "RightMargin": 546.2166,
+            "TopMargin": 20.6621,
+            "BottomMargin": 899.3379,
+            "Tag": 16,
+            "ActionTag": -1984892222,
+            "Size": {
+              "X": 73.0,
+              "Y": 40.0
+            },
+            "Name": "TopImg_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Bomb.json",
+              "Plist": ""
+            },
+            "InnerActionSpeed": 0.5,
+            "AnchorPoint": {},
+            "Position": {
+              "X": -318.1432,
+              "Y": 157.8633
+            },
+            "Scale": {
+              "ScaleX": 0.8,
+              "ScaleY": 0.8
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": -0.4971,
+              "Y": 0.1644
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -318.1432,
+            "RightMargin": 958.1432,
+            "TopMargin": 802.1367,
+            "BottomMargin": 157.8633,
+            "Tag": 33,
+            "ActionTag": 615127948,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "ProjectNode_3",
+            "ctype": "ProjectNodeObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "bBomb.json",
+              "Plist": ""
+            },
+            "InnerActionSpeed": 0.5,
+            "AnchorPoint": {},
+            "Position": {
+              "X": -249.9524,
+              "Y": 335.232
+            },
+            "Scale": {
+              "ScaleX": 0.8,
+              "ScaleY": 0.8
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": -0.3906,
+              "Y": 0.3492
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -249.9524,
+            "RightMargin": 889.9524,
+            "TopMargin": 624.768,
+            "BottomMargin": 335.232,
+            "Tag": 99,
+            "ActionTag": 119288568,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "ProjectNode_2",
+            "ctype": "ProjectNodeObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "passMov.json",
+              "Plist": ""
+            },
+            "InnerActionSpeed": 1.0,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "RightMargin": 640.0,
+            "TopMargin": 960.0,
+            "Tag": 58,
+            "ActionTag": -1350107392,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "ProjectNode_4",
+            "ctype": "ProjectNodeObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 960.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "bBomb.json",
+        "bg.png",
+        "Bomb.json",
+        "btn.png",
+        "btn1.png",
+        "clock.png",
+        "Default/Button_Disable.png",
+        "Default/Sprite.png",
+        "fcwm520logobg.png",
+        "Layer.json",
+        "passMov.json",
+        "score.png",
+        "topline.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}
