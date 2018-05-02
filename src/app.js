@@ -15,6 +15,7 @@ var HelloWorldLayer = cc.Layer.extend({
     toplineImg:null,
     ctor:function () {
         //////////////////////////////
+        cc.Director
         // 1. super init first
         this._super();
 
