@@ -22,6 +22,11 @@
     "frameRate"     : 60,
     // "frameRate" set the wanted frame rate for your game, but the real fps depends on your game implementation and the running environment.
 
+    "noCache"       : false,
+    // "noCache" set whether your resources will be loaded with a timestamp suffix in the url.
+    // In this way, your resources will be force updated even if the browser holds a cache of it.
+    // It's very useful for mobile browser debuging.
+
     "id"            : "gameCanvas",
     // "gameCanvas" sets the id of your canvas element on the web page, it's useful only on web.
 
@@ -51,38 +56,20 @@ cc.game.onStart = function(){
     if(!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it
         document.body.removeChild(document.getElementById("cocosLoading"));
 
-    // Pass true to enable retina display, disabled by default to improve performance
-    cc.view.enableRetina(false);
+    // Pass true to enable retina display, on Android disabled by default to improve performance
+    cc.view.enableRetina(cc.sys.os === cc.sys.OS_IOS ? true : false);
     // Adjust viewport meta
     cc.view.adjustViewPort(true);
     // Setup the resolution policy and design resolution size
-    
-    
-    
-    //cc.view.setDesignResolutionSize(640, 960, cc.ResolutionPolicy.FIXED_WIDTH);
+    cc.view.setDesignResolutionSize(960, 640, cc.ResolutionPolicy.SHOW_ALL);
+    // Instead of set design resolution, you can also set the real pixel resolution size
+    // Uncomment the following line and delete the previous line.
+    // cc.view.setRealPixelResolution(960, 640, cc.ResolutionPolicy.SHOW_ALL);
     // The game will be resized when browser size change
-    
-    var continerw=cc.view.getFrameSize();
-//    theScaleH=1;
-//    theScaleH=continerw.height*640/continerw.width/960;
-//    cc.log("jjjjL=",continerw.width,continerw.height);
-    if (continerw.width>continerw.height) {
-    	cc.view.setDesignResolutionSize(640, 960, cc.ResolutionPolicy.SHOW_ALL);
-    	theScaleH=1;
-	}else{
-		cc.view.setDesignResolutionSize(640, 960, cc.ResolutionPolicy.FIXED_WIDTH);
-		continerw=cc.view.getFrameSize();
-		theScaleH=continerw.height*640/continerw.width/960;
-	}
-    WINSIZE=cc.winSize;
     cc.view.resizeWithBrowserSize(true);
-
-
     //load resources
-    //MyLoaderScene是进度条加载资源相关 g_resources是存放的全部资源，游戏开始前，先全部加载到内存中去
-    MyLoaderScene.preload(g_resources, function () {
-    	cc.director.runScene(new HelloWorldS());
-    	//cc.director.runScene(new HelloWorldScene());
+    cc.LoaderScene.preload(g_resources, function () {
+        cc.director.runScene(new HelloWorldScene());
     }, this);
 };
 cc.game.run();

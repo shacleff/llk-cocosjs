@@ -1,25 +1,18 @@
 {
-  "project_type": "javascript",
-  "debugMode": 1,
-  "showFPS": false,
-  "frameRate": 30,
-  "id": "gameCanvas",
-  "renderMode": 0,
-  "engineDir": "frameworks/cocos2d-html5",
-  "modules": [
-    "cocos2d",
-    "cocostudio"
-  ],
-  "jsList": [
-    "src/loading.js",
-    "src/resource.js",
-    "src/Items.js",
-    "src/SmallLine.js",
-    "src/PointLine.js",
-    "src/ljjMath.js",
-    "src/baseLayer.js",
-    "src/WinGameUI.js",
-    "src/app.js",
-    "src/HelloWorld.js"
-  ]
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : true,
+    "frameRate" : 60,
+    "noCache" : false,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d"],
+
+    "jsList" : [
+        "src/resource.js",
+        "src/app.js"
+    ]
 }

@@ -167,20 +167,6 @@ cc.radiansToDegress = function (angle) {
 cc.REPEAT_FOREVER = Number.MAX_VALUE - 1;
 
 /**
- * default gl blend src function. Compatible with premultiplied alpha images.
- * @constant
- * @type Number
- */
-cc.BLEND_SRC = cc.OPTIMIZE_BLEND_FUNC_FOR_PREMULTIPLIED_ALPHA ? 1 : 0x0302;
-
-/**
- * default gl blend dst function. Compatible with premultiplied alpha images.
- * @constant
- * @type Number
- */
-cc.BLEND_DST = 0x0303;
-
-/**
  * Helpful macro that setups the GL server state, the correct GL program and sets the Model View Projection matrix
  * @param {cc.Node} node setup node
  * @function
@@ -456,11 +442,32 @@ cc.CLAMP_TO_EDGE	= 0x812f;
 cc.MIRRORED_REPEAT   = 0x8370;
 
 /**
+ * default gl blend src function. Compatible with premultiplied alpha images.
+ * @constant
+ * @name cc.BLEND_SRC
+ * @type Number
+ */
+cc.BLEND_SRC = cc.SRC_ALPHA;
+cc.game.addEventListener(cc.game.EVENT_RENDERER_INITED, function () {
+    if (cc._renderType === cc.game.RENDER_TYPE_WEBGL
+         && cc.OPTIMIZE_BLEND_FUNC_FOR_PREMULTIPLIED_ALPHA) {
+        cc.BLEND_SRC = cc.ONE;
+    }
+});
+
+/**
+ * default gl blend dst function. Compatible with premultiplied alpha images.
+ * @constant
+ * @type Number
+ */
+cc.BLEND_DST = cc.ONE_MINUS_SRC_ALPHA;
+
+/**
  * Check webgl error.Error will be shown in console if exists.
  * @function
  */
 cc.checkGLErrorDebug = function () {
-    if (cc.renderMode === cc._RENDER_TYPE_WEBGL) {
+    if (cc.renderMode === cc.game.RENDER_TYPE_WEBGL) {
         var _error = cc._renderContext.getError();
         if (_error) {
             cc.log(cc._LogInfos.checkGLErrorDebug, _error);
