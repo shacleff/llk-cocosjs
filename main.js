@@ -66,6 +66,8 @@ cc.game.onStart = function(){
 //    theScaleH=1;
 //    theScaleH=continerw.height*640/continerw.width/960;
 //    cc.log("jjjjL=",continerw.width,continerw.height);
+
+    //总体来说，为了不变形. 还是按照宽度适配呗.
     if (continerw.width>continerw.height) {
     	cc.view.setDesignResolutionSize(640, 960, cc.ResolutionPolicy.SHOW_ALL);
     	theScaleH=1;
@@ -81,8 +83,9 @@ cc.game.onStart = function(){
     //load resources
     //MyLoaderScene是进度条加载资源相关 g_resources是存放的全部资源，游戏开始前，先全部加载到内存中去
     MyLoaderScene.preload(g_resources, function () {
-    	cc.director.runScene(new HelloWorldS());
-    	//cc.director.runScene(new HelloWorldScene());
+
+    	cc.director.runScene(new HelloWorldS()); //loading加载资源后，切换到HelloWorldS场景中
+
     }, this);
 };
 cc.game.run();

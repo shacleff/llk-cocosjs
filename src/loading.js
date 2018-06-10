@@ -106,6 +106,8 @@ var MyLoaderScene = cc.Scene.extend({
 			 
 			 self._processLayer.changeWidth(self._processLayerLength * percent / 100);
 		 }, function () {
+
+		 	// 利用传递进来的cb和target，进行调用这个方法
 			 if (self.cb)
 				 self.cb.call(self.target);
 		 });
@@ -124,6 +126,7 @@ var MyLoaderScene = cc.Scene.extend({
         cc.director.runScene(new HelloWorldScene());
     }, this);
  */
+//类静态方法
 MyLoaderScene.preload = function(resources, cb, target){
 	var _myLoaderScene = null;
 	if(!_myLoaderScene) {
